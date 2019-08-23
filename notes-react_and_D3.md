@@ -14,3 +14,7 @@ Follow [Interactive Applications with React & D3, Elijah Meeks, 4 May 2017](http
 - It works!
 - I'll have to try the approach in section `React for element creation, D3 as the visualization kernel` later as I've run out of time.
 
+This post looks like it takes the preceeding to the next level and explains more stuff: [Data visualization in React using React D3, 4 Sept 2018](https://blog.logrocket.com/data-visualization-in-react-using-react-d3-c35835af16d0/).
+
+This might have useful information on an alternative way to use D3 in React: [Set up D3.js Inside React in 5 Minutes, 2 January 2017](https://blog.sicara.com/a-starting-point-on-using-d3-with-react-869fdf3dfaf).
+
