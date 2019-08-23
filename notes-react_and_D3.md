@@ -10,3 +10,7 @@ Follow [How to get started with D3 and React - freecodecamp - 13 May 2019](https
 
 Follow [Interactive Applications with React & D3, Elijah Meeks, 4 May 2017](https://medium.com/@Elijah_Meeks/interactive-applications-with-react-d3-f76f7b3ebc71).
 
+- First try the approach in the section `Traditional D3 rendering with React`.
+- It works!
+- I'll have to try the approach in section `React for element creation, D3 as the visualization kernel` later as I've run out of time.
+
