@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
 import * as d3 from 'd3';
-// import { scaleLinear } from 'd3-scale’
-// import { max } from 'd3-array'
-// import { select } from 'd3-selection'
 
 class BarChart extends Component {
    constructor(props){
@@ -33,9 +30,6 @@ class BarChart extends Component {
       .data(this.props.data)
       .exit()
       .remove()
-   
-//    d3.select(node)
-//       .style("background-color", '#EFE0E0')
 
    d3.select(node)
    .style("background-color", '#EFE0E0')
@@ -45,7 +39,7 @@ class BarChart extends Component {
       .attr('x', (d,i) => 20 + i * 25)
       .attr('y', d => this.props.size[1] - yScale(d))
       .attr('height', d => yScale(d))
-      .attr('width', 35)
+      .attr('width', 15)
    }
 render() {
       return (<div>
