@@ -34,11 +34,12 @@ class BarChart extends Component {
       .exit()
       .remove()
    
-   d3.select(node)
-      .style("background-color", '#EFE0E0')
+//    d3.select(node)
+//       .style("background-color", '#EFE0E0')
 
    d3.select(node)
-      .selectAll('rect')
+   .style("background-color", '#EFE0E0')
+   .selectAll('rect')
       .data(this.props.data)
       .style('fill', '#fe9922')
       .attr('x', (d,i) => 20 + i * 25)
