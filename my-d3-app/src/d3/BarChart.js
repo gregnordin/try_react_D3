@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './App.css'
 import * as d3 from 'd3';
 // import { scaleLinear } from 'd3-scale’
 // import { max } from 'd3-array'
@@ -45,17 +44,41 @@ class BarChart extends Component {
       .attr('x', (d,i) => 20 + i * 25)
       .attr('y', d => this.props.size[1] - yScale(d))
       .attr('height', d => yScale(d))
-      .attr('width', 35)
+      .attr('width', 15)
    }
 render() {
-      return (<div>
-      <p>Start BarChart D3 element</p>
-      <svg ref={node => this.node = node}
-        width={500} height={500}>
-      </svg>
-      <p>End BarChart D3 element</p>
+      return (
+         <div>
+            <p>Start BarChart D3 element</p>
+               <svg ref={node => this.node = node}
+                  width={500} height={500}>
+               </svg>
+            <p>End BarChart D3 element</p>
       </div>
       );
    }
 }
 export default BarChart
+
+
+// import React from 'react';
+// import './App.css';
+// import BarChart from './d3/BarChart'
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         {/* <img src={logo} className="App-logo" alt="logo" /> */}
+//         <p>
+//           Edit <code>src/BarChart.js</code> and save to reload.
+//         </p>
+//         <div>
+//           <BarChart data={[5,10,1,3,9,6,2,3,4,5,6,7]} size={[300,300]} />
+//         </div>
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
