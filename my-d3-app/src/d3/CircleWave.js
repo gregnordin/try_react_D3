@@ -34,7 +34,8 @@ export default class CircleWave extends Component {
                 .angle(function(a) { return a; })
                 .radius(function(a) {
                 var t = d3.now() / 1000;
-                return 200 + Math.cos(a * 8 - i * 2 * Math.PI / 3 + t) * Math.pow((1 + Math.cos(a - t)) / 2, 3) * 32;
+                return 200 + Math.cos(a * 8 - i * 2 * Math.PI / 3 + t) * 
+                    Math.pow((1 + Math.cos(a - t)) / 2, 3) * 32;
                 });
         });
         d3.timer(function() {
@@ -60,3 +61,25 @@ export default class CircleWave extends Component {
     );
   }
 }
+
+
+// import React from "react";
+// import "./App.css";
+// import CircleWave from "./d3/CircleWave";
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <div>
+//           <CircleWave
+//             // data={[5, 10, 1, 3, 9, 6, 2, 3, 4, 5, 6, 7]}
+//             // size={[300, 300]}
+//           />
+//         </div>
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
